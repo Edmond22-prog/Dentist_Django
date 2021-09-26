@@ -140,9 +140,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
     # myaccount.google.com/lesssecureapps
     # accounts.google.com/DisplayUnlockCaptcha
     # myaccount.google.com/apppasswords
-    
+
 EMAIL_HOST = 'localhost'    # 'smtp.gmail.com'
-EMAIL_PORT = '1025'     # '587' et change au fil du temps
+EMAIL_PORT = 1025     # 587 et change au fil du temps
 EMAIL_HOST_USER = ''    # 'edghimakoll@gmail.com'
 EMAIL_HOST_PASSWORD = ''
 EMAIL_USE_TLS = False   # True
