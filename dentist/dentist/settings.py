@@ -129,3 +129,20 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# Parametres de l'Email : pour le localhost et gmail
+
+# Commande pour tracer le mail envoye par le localhost :
+    # python3 -m smtpd -n -c DebuggingServer localhost:1025
+
+# Liens pour securiser le mot de passe gmail :
+    # myaccount.google.com/lesssecureapps
+    # accounts.google.com/DisplayUnlockCaptcha
+    # myaccount.google.com/apppasswords
+    
+EMAIL_HOST = 'localhost'    # 'smtp.gmail.com'
+EMAIL_PORT = '1025'     # '587' et change au fil du temps
+EMAIL_HOST_USER = ''    # 'edghimakoll@gmail.com'
+EMAIL_HOST_PASSWORD = ''
+EMAIL_USE_TLS = False   # True
